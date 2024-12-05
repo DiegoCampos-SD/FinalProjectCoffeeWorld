@@ -1,0 +1,25 @@
+{% extends 'coffeeWorld/base.html' %}
+{%block content %}
+    <div class="drinks_container">
+        {% for drink in drinks %}
+            <div class="drink">
+                <h2>{{drink.name}}</h2>
+                <p>{{ drink.ingredients|linebreaksbr }}</p>
+                <b class="price">
+                ${{ drink.price }}
+                </b>
+                <div class="quantity_input_container">
+                    <form action="">
+                        <label for="quantity">Quantity:</label>
+                        <input class="quantity_input" type="number" id="quantity" name="quantity" min="0">
+                    </form>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="create_order_btn_container">
+        <button class="order_btn" type="submit">Create Order</button>
+    </div>
+{%endblock%}
+
+
