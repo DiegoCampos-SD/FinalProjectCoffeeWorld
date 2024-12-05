@@ -25,7 +25,7 @@ def drink_new(request):
     else:
         form = CreationForm()
     return ("ok")
-    #return render(request, 'coffeWorld/drink_edit.html', {'form': form})
+    #return render(request, 'coffeeWorld/drink_edit.html', {'form': form})
 
 """def drink_edit(request, pk):
     drink = get_object_or_404(Drink, pk=pk)
