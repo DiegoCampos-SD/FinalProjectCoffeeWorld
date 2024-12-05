@@ -39,4 +39,4 @@ def drink_new(request):
             return redirect('post_detail', pk=drink.pk)
     else:
         form = CreationForm(instance=post)
-    return render(request, 'coffeWorld/drink_edit.html', {'form': form})"""
+    return render(request, 'coffeeWorld/drink_edit.html', {'form': form})"""
