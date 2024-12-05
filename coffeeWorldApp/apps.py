@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CoffeeshopappConfig(AppConfig):
+class CoffeeWWorldAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'coffeeShopApp'
+    name = 'coffeeWorldApp'
