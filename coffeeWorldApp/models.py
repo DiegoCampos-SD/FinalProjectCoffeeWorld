@@ -56,4 +56,7 @@ class Orders(models.Model):
 =======
     def str(self):
         return f"Order by {self.user} on {self.order_date}"
+<<<<<<< HEAD
 >>>>>>> a8a292c8fad98893eda100796cfdd561659c9c79
+=======
+>>>>>>> 8af36896afb5564f613490539bf99154dcde8e5d
