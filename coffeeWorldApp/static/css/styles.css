@@ -14,6 +14,11 @@
     text-decoration: none;
 }
 
+.col{
+    width: 80%;
+    justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -33,13 +38,14 @@ h4 {
 .drinks_container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .drink {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%;
+    width: 33%;
     margin-bottom: 70px;
 }
 
