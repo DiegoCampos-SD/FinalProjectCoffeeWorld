@@ -9,5 +9,5 @@ class DrinkForm(forms.ModelForm):
 class BeanForm(forms.ModelForm):
     class Meta:
         model = Bean
-        fields = ('country', 'name')
+        fields = ('name', 'country')
         
