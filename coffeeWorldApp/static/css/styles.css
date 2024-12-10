@@ -3,6 +3,8 @@
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .page-header h1,
@@ -12,6 +14,29 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.coffee_bag_container{
+    width: 80px;
+    
+
+}
+
+.coffee_bag{
+    height: 10px;
+}
+
+.col{
+    width: 80%;
+    justify-content: center;
 }
 
 h1,
@@ -33,13 +58,14 @@ h4 {
 .drinks_container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .drink {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%;
+    width: 33%;
     margin-bottom: 70px;
 }
 
@@ -58,6 +84,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .order_btn{
