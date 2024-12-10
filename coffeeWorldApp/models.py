@@ -49,6 +49,11 @@ class Orders(models.Model):
             self.total_price = self.bean.price * self.quantity
         super().save(*args, **kwargs)
 
+<<<<<<< HEAD
     def __str__(self):
         return f"Order by {self.user} on {self.order_date}"
 
+=======
+    def str(self):
+        return f"Order by {self.user} on {self.order_date}"
+>>>>>>> a8a292c8fad98893eda100796cfdd561659c9c79
