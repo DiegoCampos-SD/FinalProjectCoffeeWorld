@@ -9,9 +9,13 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="container">
-                <a href="{% url 'bean_list' %}" class="top-menu">Beans</span></a>
+            <div class="container_header">
                 <h1><a href="/">Coffee World</a></h1>
+                <div class="coffee_bag_container">
+                    <a class="coffee_bag" href="{% url 'bean_list' %}">
+                        {% include './icons/coffee_bag.svg' %}
+                    </a>
+                </div>
             </div>
         </header>
         <main class="container">

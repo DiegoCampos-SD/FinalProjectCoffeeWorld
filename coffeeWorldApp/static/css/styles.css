@@ -3,6 +3,8 @@
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .page-header h1,
@@ -12,6 +14,24 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.coffee_bag_container{
+    width: 80px;
+    
+
+}
+
+.coffee_bag{
+    height: 10px;
 }
 
 .col{
@@ -64,6 +84,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .order_btn{

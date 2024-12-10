@@ -28,7 +28,7 @@ def drink_new(request):
 
 def bean_list(request):
     beans = Bean.objects.filter(creationDate__lte=timezone.now()).order_by('creationDate')
-    return render(request, 'coffeeWorld/beans_list.html',{'bean':beans})
+    return render(request, 'coffeeWorld/beans_list.html',{'beans':beans})
 
 def bean_new(request):
     if request.method == "POST":
