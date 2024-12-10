@@ -3,17 +3,6 @@
     <form action="{% url 'order_confirmation' %}" method="POST">
         {% csrf_token %}
         <div class="drinks_container">
-            {% for drink in drinks %}
-                <div class="drink">
-                    <h2>{{ drink.name }}</h2>
-                    <p>{{ drink.ingredients|linebreaksbr }}</p>
-                    <b class="price">${{ drink.price }}</b>
-                    <div class="quantity_input_container">
-                        <label for="quantity{{ drink.id }}">Quantity:</label>
-                        <input class="quantityinput" type="number" id="quantity{{ drink.id }}" name="quantity_{{ drink.id }}" min="0">
-                    </div>
-                </div>
-            {% endfor %}
             {% for bean in beans %}
                 <div class="drink">
                     <h2>{{ bean.name }}</h2>
