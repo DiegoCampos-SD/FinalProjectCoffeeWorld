@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Drink
 from .forms import DrinkForm
+from django.shortcuts import render, redirect
 
 # Create your views here.
 def drink_list(request):
@@ -21,3 +22,13 @@ def drink_new(request):
         form = CreationForm()
     return ("ok")
     
+def create_order(request):
+    if request.method == 'POST':
+        
+        return redirect('order_confirmation')
+    
+
+    return render(request, 'coffeeWorld/drink_list.html', {'drinks': drinks})
+
+def order_confirmation(request):
+    return render(request, 'coffeeWorld/order_confirmation.html')
