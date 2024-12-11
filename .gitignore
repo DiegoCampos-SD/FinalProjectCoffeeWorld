@@ -9,7 +9,7 @@ venvCoffeeWorld/
 venv/
 
 # Database
-db.sqlite3
+
 
 # Static folder at project root
 /static/
